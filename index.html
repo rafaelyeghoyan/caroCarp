@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preload" href="./assets/fonts/Gilroy-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-BlackItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-BoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-Black.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-Heavy.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-ExtraBoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-HeavyItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-LightItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-MediumItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-SemiBoldItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-UltraLight.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-RegularItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-ThinItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-Thin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Gilroy-UltraLightItalic.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="Ermilov-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <title>Caro Carp</title>
+</head>
+<body>
+<header>
+    <div class="container">
+        <div class="logo">
+            <img src="./assets/images/Logo.png" alt="No Image">
+        </div>
+        <div class="time">
+            <div class="icon">
+                <img src="./assets/images/time.png" alt="No image">
+            </div>
+            <div class="date">
+                <div class="week_day">
+                    <span>ПН-НД</span>
+                </div>
+                <div class="day_time">
+                    <span>з 9:00 до 19:00</span>
+                </div>
+            </div>
+            <div class="location">
+                <div class="icon">
+                    <img src="./assets/images/Location on.png" alt="No image">
+                </div>
+                <div class="location_text">
+                    <span>М. Луцьк, вул. Набережна, 10</span>
+                </div>
+            </div>
+        </div>
+        <ul class="menu_links_list">
+            <li>
+                <a href="#">Про нас</a>
+            </li>
+            <li>
+                <a href="#">Співвласники</a>
+            </li>
+            <li>
+                <a href="#">Галерея</a>
+            </li>
+        </ul>
+        <div class="menu_block">
+            <div class="menu_items">
+                <div class="user_link">
+                    <img src="./assets/images/User.png" alt="No image">
+                </div>
+                <div class="shopping_card">
+                    <img src="./assets/images/Shopping cart.png" alt="No image">
+                </div>
+                <div class="basket_list">
+                    <a href="#">
+                        <span>До каталогу</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="content">
+    <div class="container">
+        <div class="selected_page_route">
+            <span>
+                <a href="#">Головна / </a>
+                <a href="#">Каталог/ </a>
+                <a href="#">Вудки</a>
+            </span>
+        </div>
+        <div class="page_title_search">
+            <h2 class="page_title">Вудки</h2>
+            <div class="search">
+                <form action="#">
+                    <label>
+                        <img src="./assets/images/Search.png" alt="No image" class="search_icon">
+                        <input type="text" placeholder="Пошук товарів">
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="accordion_product_block">
+            <div class="acourdion_block">
+                <button class="accordion" id="1">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="2">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="3">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="4">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="5">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="6">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="7">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="8">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="9">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="10">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="11">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="12">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="13">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="14">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="15">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="16">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <button class="accordion" id="17">Вудилища</button>
+                <div class="panel">
+                    <div class="accordion_links">
+                        <ul>
+                            <li>
+                                <a href="#">Матчеві вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Болонські вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Коропові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Махові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Сомові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Спінінгові вудилища</a>
+                            </li>
+                            <li>
+                                <a href="#">Фідерні вудилища</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="product_list_block">
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+                <div class="product">
+                    <div class="img">
+                        <img src="./assets/images/product.png" alt="No image">
+                    </div>
+                    <div class="description">
+                        <p>Спінінг Daiwa Fuego 902MLFS 2.74 м 5-25 г</p>
+                    </div>
+                    <div class="price">
+                        <span>4 279 грн</span>
+                        <button><img src="./assets/images/Shopping%20cart%202.png" alt="No image"></button>
+                    </div>
+                    <div class="more_details">
+                        <button>Детальніше</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="paginator">
+            <button class="preview">
+                <img src="./assets/images/Preview%20button.png" alt="No image">
+            </button>
+            <span class="pages">
+                    <a href="#">1,</a>
+                    <a href="#"> 2,</a>
+                    <a href="#"> 3....</a>
+                    <a href="#"> 126</a>
+                </span>
+            <button class="next">
+                <img src="./assets/images/Next%20button.png" alt="No image">
+            </button>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="footer_content">
+            <div class="logo">
+                <img src="./assets/images/footer%20logo.png" alt="No image">
+            </div>
+            <ul class="contact_list">
+                <li>
+                    <img src="./assets/images/Location%20on.png" alt="No image">
+                    <span>М. Луцьк, вул. Набережна, 10</span>
+                </li>
+                <li>
+                    <img src="./assets/images/Phone.png" alt="No image">
+                    <span>+380 68 44 89 011</span>
+                </li>
+                <li>
+                    <img src="./assets/images/Email.png" alt="No image">
+                    <span>mail.mail@gmail.com</span>
+                </li>
+            </ul>
+            <div class="privacy_policy">
+        <span>
+            <a href="#">Політика конфіденційності</a>
+        </span>
+                <span>
+            <a href="#">Договір оферти</a>
+        </span>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./script.js"></script>
+</body>
+</html>
