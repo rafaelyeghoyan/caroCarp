@@ -156,8 +156,8 @@
                 <span> <a href="#">Зареєструйтесь</a> або <a href="#">увійдіть</a> у свій акаунт.</span>
             </div>
         </div>
-            <div class="catalogue_container">
-                <div class="total_price">
+        <div class="catalogue_container">
+            <div class="total_price">
                 <span>Сума замовлення:</span>
                 <span>5144 грн</span>
             </div>
@@ -174,21 +174,21 @@
         <div class="log_in_container">
             <h5>Вхід в кабінет</h5>
             <form action="#">
-                <input type="text">
-                <input type="number">
+                <input type="text" placeholder="Ім’я та Прізвище">
+                <input type="number" placeholder="Номер телефону">
                 <div class="password-container">
                     <input type="password" id="password" placeholder="Пароль">
                     <span class="toggle-password" onclick="togglePasswordVisibility()">
                         <img src="./assets/images/Eye.png" alt="No image">
                     </span>
                 </div>
-            <div class="forgot_password">
-                <span>
+                <div class="forgot_password">
+                <span class="reset_password">
                     Забули пароль?
-                    <a href="#"> Скиньте його тут</a>
+                    <button class="reset_password">Скиньте його тут</button>
                 </span>
-            </div>
-                <button type="submit">
+                </div>
+                <button type="submit" class="submit">
                     Увійти
                 </button>
             </form>
@@ -204,6 +204,62 @@
             <img src="./assets/images/Close%202.png" alt="No image">
         </div>
 
+    </div>
+</div>
+
+<div class="reset_password_block">
+    <div class="reset_password_content">
+        <form action="#">
+            <h5>ВІдновлення паролю</h5>
+            <input type="number" placeholder="Номер телефону">
+            <button class="send_code">Надіслати код</button>
+        </form>
+        <div class="close" id="_2">
+            <img src="./assets/images/Close%202.png" alt="No image">
+        </div>
+    </div>
+</div>
+
+<div class="reset_password_submit_block">
+    <div class="reset_password_submit_content">
+        <form action="#">
+            <h5>ВІдновлення паролю</h5>
+            <input type="number" placeholder="Номер телефону">
+            <p class="resend_code">
+                Якщо код не буде надісланий протягом 60 секунд, натисніть сюди.
+            </p>
+            <button class="submit_code">Надіслати код</button>
+        </form>
+
+        <div class="close" id="_3">
+            <img src="./assets/images/Close%202.png" alt="No image">
+        </div>
+    </div>
+</div>
+
+<div class="set_new_password">
+    <div class="dialog_block">
+        <form action="#">
+            <h5>Введіть новий пароль</h5>
+            <div class="password-container">
+                <input type="password" id="password2" placeholder="Пароль">
+                <span class="toggle-password" onclick="togglePasswordVisibility2()">
+                        <img src="./assets/images/Eye.png" alt="No image">
+                    </span>
+            </div>
+            <div class="password-container">
+                <input type="password" id="password3" placeholder="Повторіть пароль">
+                <span class="toggle-password" onclick="togglePasswordVisibility3()">
+                        <img src="./assets/images/Eye.png" alt="No image">
+                    </span>
+            </div>
+            <button class="submit set_password">
+                Встановити
+            </button>
+        </form>
+        <div class="close" id="_4">
+            <img src="./assets/images/Close%202.png" alt="No image">
+        </div>
     </div>
 </div>
 
@@ -1013,6 +1069,7 @@
         </div>
     </div>
 </div>
+
 <footer>
     <div class="container">
         <div class="footer_content">

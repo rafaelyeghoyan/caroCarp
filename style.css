@@ -862,7 +862,7 @@ footer {
     margin: 15px 0;
 }
 
-.log_in .log_in_container form span {
+.log_in .log_in_container form .reset_password {
     display: block;
     font-family: Gilroy;
     font-size: 18px;
@@ -872,9 +872,14 @@ footer {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #161616;
+
 }
 
-.log_in .log_in_container form span a {
+
+.log_in .log_in_container form .reset_password button {
+    border: none;
+    background: none;
+    outline: none;
     display: inline-block;
     font-family: Gilroy;
     font-size: 18px;
@@ -886,9 +891,10 @@ footer {
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
     color: #161616;
+    cursor: pointer;
 }
 
-.log_in input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+.log_in input[type="number"]::-webkit-outer-spin-button, .log_in input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -902,13 +908,7 @@ footer {
     padding-right: 40px;
 }
 
-.log_in form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    align-content: center;
-}
+
 
 .log_in .toggle-password {
     position: absolute;
@@ -921,11 +921,22 @@ footer {
     -moz-appearance: textfield;
 }
 
+.log_in input::placeholder {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
 .log_in .log_in_container form .forgot_password {
     width: 463px;
 }
 
-.log_in .log_in_container form button {
+.log_in .log_in_container form .submit {
     display: inline-block;
     text-align: center;
     padding: 17px 65px;
@@ -962,7 +973,7 @@ footer {
     color: #161616;
 }
 
-.log_in .log_in_container .registration_message_paragraph span{
+.log_in .log_in_container .registration_message_paragraph span {
     display: inline-block;
     font-family: Gilroy;
     font-size: 18px;
@@ -973,7 +984,7 @@ footer {
     text-decoration-skip-ink: none;
 }
 
-.log_in_block .close{
+.log_in_block .close {
     position: absolute;
     right: 40px;
     top: 40px;
@@ -981,8 +992,306 @@ footer {
 }
 
 
-.log_in_block  .close img{
+.log_in_block .close img {
     display: block;
     height: 100%;
     width: 100%;
+}
+
+
+.reset_password_block {
+    position: absolute;
+    backdrop-filter: blur(6px);
+    width: 0;
+    height: 0;
+    z-index: 99;
+    background-color: #16161633;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.reset_password_block .reset_password_content {
+    background-color: #ffffff;
+    width: 800px;
+    height: 250px;
+    margin: 150px auto 0 auto;
+    position: relative;
+    padding-top: 25px;
+
+}
+
+.reset_password_block .reset_password_content form h5 {
+    margin: 25px 0;
+    font-family: Ermilov;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21.74px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+.reset_password_block .reset_password_content form input {
+    display: inline-block;
+    width: 393px;
+    padding: 12px 20px 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #F1F1F1;
+    margin: 15px 0;
+}
+
+.reset_password_block .reset_password_content form input::placeholder {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+.reset_password_content input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.reset_password_block .reset_password_content form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.reset_password_block .reset_password_content form button {
+    display: inline-block;
+    text-align: center;
+    padding: 17px 65px;
+    font-family: Ermilov;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.31px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+    background: #C0E00B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 25px 0;
+}
+
+.reset_password_block .reset_password_content .close {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.reset_password_submit_block {
+    position: absolute;
+    backdrop-filter: blur(6px);
+    width: 0;
+    height: 0;
+    z-index: 99;
+    background-color: #16161633;
+    overflow: hidden;
+}
+
+.reset_password_submit_block form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.reset_password_submit_block form{
+    width: 55%;
+    margin: 0 auto;
+}
+
+.reset_password_submit_block .reset_password_submit_content {
+    background-color: #ffffff;
+    width: 800px;
+    height: 250px;
+    margin: 150px auto 0 auto;
+    position: relative;
+    padding-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-direction: column;
+}
+
+.reset_password_submit_block .reset_password_submit_content form h5 {
+    margin: 25px 0;
+    font-family: Ermilov;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21.74px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+.reset_password_submit_block .reset_password_submit_content form input {
+
+    display: inline-block;
+    width: 240px;
+    padding: 12px 20px 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #F1F1F1;
+    margin: 15px 0;
+}
+
+.reset_password_submit_block .reset_password_submit_content form input::placeholder {
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+.reset_password_submit_block .reset_password_submit_content input[type="number"]::-webkit-outer-spin-button, .reset_password_content input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.reset_password_submit_block .reset_password_submit_content input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.reset_password_submit_block .reset_password_submit_content form button {
+    display: block;
+    text-align: center;
+    padding: 17px 65px;
+    font-family: Ermilov;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.31px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+    background: #C0E00B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 25px 0;
+}
+
+.reset_password_submit_block .reset_password_submit_content .close {
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.reset_password_submit_block .reset_password_submit_content form p{
+    width: 65%;
+}
+
+.set_new_password{
+    position: absolute;
+    backdrop-filter: blur(6px);
+    width: 0;
+    height: 0;
+    z-index: 99;
+    background-color: #16161633;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.set_new_password .dialog_block{
+    background-color: #ffffff;
+    width: 800px;
+    height: 320px;
+    margin: 150px auto 0 auto;
+    position: relative;
+    padding-top: 25px;
+}
+
+.set_new_password .dialog_block form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.set_new_password .dialog_block form h5{
+    margin: 25px 0;
+    font-family: Ermilov;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21.74px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+.set_new_password .dialog_block form input{
+    display: inline-block;
+    width: 393px;
+    padding: 12px 50px 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #F1F1F1;
+    margin: 15px 0;
+}
+
+.set_new_password .dialog_block .password-container {
+    position: relative;
+}
+
+.set_new_password .dialog_block  input[type="password"], .set_new_password .dialog_block  input[type="text"] {
+    width: 393px;
+    padding-right: 40px;
+}
+
+.set_new_password .dialog_block .toggle-password {
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    cursor: pointer;
+}
+
+.set_new_password .dialog_block .submit{
+    display: inline-block;
+    text-align: center;
+    padding: 17px 65px;
+    font-family: Ermilov;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.31px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+    background: #C0E00B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 25px 0;
+}
+
+.set_new_password .dialog_block .close{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    cursor: pointer;
 }
