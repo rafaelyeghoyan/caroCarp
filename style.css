@@ -261,6 +261,7 @@ header span {
 
 .user_link {
     margin-right: 30px;
+    cursor: pointer;
 }
 
 .location_text {
@@ -269,6 +270,7 @@ header span {
 
 .shopping_card {
     margin-right: 30px;
+    cursor: pointer;
 }
 
 
@@ -810,9 +812,9 @@ footer {
 
 .log_in {
     position: absolute;
-    backdrop-filter: blur(16px);
-    width: 100%;
-    height: 100vh;
+    backdrop-filter: blur(6px);
+    width: 0;
+    height: 0;
     z-index: 99;
     background-color: #16161633;
     display: flex;

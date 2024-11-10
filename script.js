@@ -5,7 +5,7 @@ let body = document.body;
 let isCatalogueOpen = false;
 let logInBlock = document.getElementsByClassName("log_in")[0];
 let userAccount = document.getElementsByClassName("user_link")[0];
-let closeUserAccount = document.getElementById("1");
+let closeUserAccount = document.getElementById("_1");
 
 userAccount.addEventListener("click", (e) => {
     if(!isCatalogueOpen){
