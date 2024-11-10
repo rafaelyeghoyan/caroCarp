@@ -112,6 +112,10 @@ closeResetPass.addEventListener("click", ()=> {
     resetPass.style.width = "0";
     resetPass.style.height = "0";
     body.style.overflow = "";
+    setNewPass.style.width = "0";
+    setNewPass.style.height = "0";
+    resetPassButton1.style.width = "0";
+    resetPassButton1.style.height = "0";
     isCatalogueOpen = false;
 
 })
@@ -127,6 +131,10 @@ submitReset.addEventListener("click", ()=>{
 closeResetPass1.addEventListener("click", ()=>{
     resetPassButton1.style.width = "0";
     resetPassButton1.style.height = "0";
+    setNewPass.style.width = "0";
+    setNewPass.style.height = "0";
+    resetPass.style.width = "0";
+    resetPass.style.height = "0";
     body.style.overflow = "";
     isCatalogueOpen = false;
 
@@ -142,6 +150,10 @@ closeSetNewPass.addEventListener("click", ()=>{
     setNewPass.style.width = "0";
     setNewPass.style.height = "0";
     body.style.overflow = "";
+    resetPass.style.width = "0";
+    resetPass.style.height = "0";
+    resetPassButton1.style.width = "0";
+    resetPassButton1.style.height = "0";
     isCatalogueOpen = false;
 
 })
