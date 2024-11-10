@@ -371,9 +371,10 @@ header span {
     align-items: flex-start;
 }
 
-.acourdion_block{
+.acourdion_block {
     width: 22%;
 }
+
 .accordion {
     width: 300px;
     padding: 20px 30px 20px 30px;
@@ -446,18 +447,17 @@ header span {
 .accordion_product_block .product_list_block {
     width: 75%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
 
-.accordion_product_block .product_list_block .product{
+.accordion_product_block .product_list_block .product {
     margin-left: 25px;
 }
 
 
-
-.accordion_product_block .product_list_block .product .description p{
+.accordion_product_block .product_list_block .product .description p {
     font-family: Gilroy;
     font-size: 18px;
     font-weight: 700;
@@ -509,18 +509,18 @@ header span {
     padding: 15px 27px;
 }
 
-.product_list_block{
+.product_list_block {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.product_list_block .product:nth-child(1n +4){
+.product_list_block .product:nth-child(1n +4) {
     margin-top: 25px;
 }
 
 
-.paginator{
+.paginator {
     width: 100%;
     text-align: center;
     margin: 25px auto;
@@ -528,11 +528,13 @@ header span {
     justify-content: center;
     align-items: center;
 }
-.paginator .pages{
+
+.paginator .pages {
     display: inline-block;
     margin: 0 15px;
 }
-.paginator .pages a{
+
+.paginator .pages a {
     font-family: Gilroy;
     font-size: 24px;
     font-weight: 700;
@@ -544,28 +546,29 @@ header span {
     display: inline-block;
 }
 
-.paginator .pages a:focus-within{
+.paginator .pages a:focus-within {
     color: #C0E00B;
 }
 
-.paginator button{
+.paginator button {
     border: none;
     outline: none;
     cursor: pointer;
     background: none;
 }
 
-footer{
+footer {
     background-color: #161616;
 }
-.footer_content{
+
+.footer_content {
     padding: 20px 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
 }
 
-.footer_content .contact_list li span{
+.footer_content .contact_list li span {
     display: inline-block;
     font-family: Gilroy;
     font-size: 18px;
@@ -576,22 +579,26 @@ footer{
     text-decoration-skip-ink: none;
     color: #FFFFFF;
 }
-.footer_content .contact_list li img{
+
+.footer_content .contact_list li img {
     display: inline-block;
     margin-right: 15px;
 }
 
-.footer_content .contact_list li{
+.footer_content .contact_list li {
     display: flex;
     align-items: center;
 }
-.footer_content .contact_list li:nth-child(1n + 2){
+
+.footer_content .contact_list li:nth-child(1n + 2) {
     margin-top: 25px;
 }
-.footer_content .privacy_policy span{
+
+.footer_content .privacy_policy span {
     display: block;
 }
-.footer_content .privacy_policy span a{
+
+.footer_content .privacy_policy span a {
     font-family: Gilroy;
     font-size: 18px;
     font-weight: 400;
@@ -601,7 +608,218 @@ footer{
     text-decoration-skip-ink: none;
     color: #FFFFFF;
 }
-.footer_content .privacy_policy{
+
+.footer_content .privacy_policy {
     display: flex;
     flex-direction: column;
 }
+
+
+.catalogue {
+    position: absolute;
+    backdrop-filter: blur(6px);
+    width: 0;
+    height: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: flex-end;
+    overflow: hidden;
+}
+
+.catalogue .catalogue_content {
+    background: #FFFF;
+    height: 100%;
+    width: 450px;
+}
+
+.catalogue_container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.catalogue .catalogue_content h5 {
+    margin: 25px 0 15px 0;
+    font-family: Gilroy;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.02px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.catalogue_list {
+    overflow: auto;
+    height: 256px;
+    padding-right: 25px;
+    margin-bottom: 40px;
+}
+
+.catalogue_list .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.catalogue_content .list .text p {
+    width: 212px;
+    font-family: Gilroy;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+    margin-bottom: 15px;
+}
+
+
+.catalogue_content .list .text span {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    display: inline-block;
+    color: #161616;
+}
+
+.catalogue_content .list .list_delete {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.catalogue_content .list .list_delete {
+    display: block;
+}
+
+
+::-webkit-scrollbar {
+    display: block;
+    width: 4px;
+    height: 268px;
+    top: 99px;
+    left: 467px;
+    gap: 0px;
+    border-radius: 2px 0px 0px 0px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #161616;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #C0E00B;
+    border-radius: 10px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.catalogue_content .paragraph {
+    background-color: #F5F5F5;
+    padding: 15px 0;
+}
+
+.catalogue_content .paragraph p {
+    margin: 0;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+
+}
+
+.catalogue_content .paragraph span {
+    display: block;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+    margin-top: 15px;
+}
+
+.catalogue_content .paragraph span a {
+    display: inline-block;
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22.4px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+
+.catalogue_content .total_price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.catalogue_content .total_price span{
+    display: block;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: right;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+.catalogue_content .payment{
+    text-align: center;
+}
+.catalogue_content .payment button{
+    display: inline-block;
+    background-color: #C0E00B;
+    border: none;
+    cursor: pointer;
+    font-family: Ermilov;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.31px;
+    text-align: center;
+    color: #161616;
+    padding: 15px 50px;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
