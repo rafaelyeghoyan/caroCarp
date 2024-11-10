@@ -700,7 +700,7 @@ footer {
 }
 
 
-::-webkit-scrollbar {
+.catalogue_content ::-webkit-scrollbar {
     display: block;
     width: 4px;
     height: 268px;
@@ -710,18 +710,18 @@ footer {
     border-radius: 2px 0px 0px 0px;
 }
 
-::-webkit-scrollbar-track {
+.catalogue_content ::-webkit-scrollbar-track {
     background-color: #161616;
     border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb {
+.catalogue_content ::-webkit-scrollbar-thumb {
     background-color: #C0E00B;
     border-radius: 10px;
 }
 
 
-::-webkit-scrollbar-thumb:hover {
+.catalogue_content ::-webkit-scrollbar-thumb:hover {
     background-color: #555;
 }
 
@@ -771,14 +771,14 @@ footer {
 }
 
 
-.catalogue_content .total_price{
+.catalogue_content .total_price {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 25px 0;
 }
 
-.catalogue_content .total_price span{
+.catalogue_content .total_price span {
     display: block;
     font-family: Gilroy;
     font-size: 18px;
@@ -790,10 +790,11 @@ footer {
     color: #161616;
 }
 
-.catalogue_content .payment{
+.catalogue_content .payment {
     text-align: center;
 }
-.catalogue_content .payment button{
+
+.catalogue_content .payment button {
     display: inline-block;
     background-color: #C0E00B;
     border: none;
@@ -805,21 +806,181 @@ footer {
     text-align: center;
     color: #161616;
     padding: 15px 50px;
+}
 
-
-
+.log_in {
+    position: absolute;
+    backdrop-filter: blur(16px);
+    width: 100%;
+    height: 100vh;
+    z-index: 99;
+    background-color: #16161633;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 
 
+.log_in .log_in_block {
+    position: relative;
+    margin-top: 20px;
+    background-color: #FFF;
+    width: 800px;
+    height: 550px;
+    text-align: center;
+}
+
+.log_in .log_in_container {
+    width: 52%;
+    margin: 30px auto;
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.log_in .log_in_container h5 {
+    margin: 0 0 20px 0;
+    font-family: Ermilov;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 21.74px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+.log_in .log_in_container form input {
+    display: inline-block;
+    width: 393px;
+    padding: 12px 50px 12px 20px;
+    border: none;
+    outline: none;
+    background-color: #F1F1F1;
+    margin: 15px 0;
+}
+
+.log_in .log_in_container form span {
+    display: block;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+.log_in .log_in_container form span a {
+    display: inline-block;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: left;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+.log_in input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.log_in .password-container {
+    position: relative;
+}
+
+.log_in input[type="password"], .log_in input[type="text"] {
+    width: 100%;
+    padding-right: 40px;
+}
+
+.log_in form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+}
+
+.log_in .toggle-password {
+    position: absolute;
+    top: 35%;
+    right: 20px;
+    cursor: pointer;
+}
+
+.log_in input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.log_in .log_in_container form .forgot_password {
+    width: 463px;
+}
+
+.log_in .log_in_container form button {
+    display: inline-block;
+    text-align: center;
+    padding: 17px 65px;
+    font-family: Ermilov;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 16.31px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+    background: #C0E00B;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin: 25px 0;
+}
 
 
+.log_in .log_in_container .registration_message_paragraph {
+    margin-bottom: 25px;
+}
+
+.log_in .log_in_container .registration_message_paragraph a {
+    display: inline-block;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: center;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #161616;
+}
+
+.log_in .log_in_container .registration_message_paragraph span{
+    display: inline-block;
+    font-family: Gilroy;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25.2px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.log_in_block .close{
+    position: absolute;
+    right: 40px;
+    top: 40px;
+    cursor: pointer;
+}
 
 
-
-
-
-
-
-
-
-
+.log_in_block  .close img{
+    display: block;
+    height: 100%;
+    width: 100%;
+}

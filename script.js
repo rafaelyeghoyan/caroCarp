@@ -3,9 +3,33 @@ let catalogue = document.getElementsByClassName("catalogue")[0];
 let openCatalogue = document.getElementsByClassName("shopping_card")[0];
 let body = document.body;
 let isCatalogueOpen = false;
+let logInBlock = document.getElementsByClassName("log_in")[0];
+let userAccount = document.getElementsByClassName("user_link")[0];
+let closeUserAccount = document.getElementById("1");
+
+userAccount.addEventListener("click", (e) => {
+    if(!isCatalogueOpen){
+        logInBlock.style.width = "100%";
+        logInBlock.style.height = "100vh";
+        body.style.overflow = "hidden";
+        isCatalogueOpen = true;
+    }else{
+        logInBlock.style.width = "0";
+        logInBlock.style.height = "0";
+        body.style.overflow = "";
+        isCatalogueOpen = false;
+    }
+
+})
+closeUserAccount.addEventListener("click", (e) => {
+    logInBlock.style.width = "0";
+    logInBlock.style.height = "0";
+    body.style.overflow = "";
+    isCatalogueOpen = false;
+})
 
 openCatalogue.addEventListener("click", () => {
-    if (!isCatalogueOpen) { // Если блок закрыт
+    if (!isCatalogueOpen) {
         catalogue.style.width = "100%";
         catalogue.style.height = "100vh";
         body.style.overflow = "hidden";
@@ -30,6 +54,18 @@ for ( let i = 0; i < acc.length; i++) {
         }
     });
 }
+
+function togglePasswordVisibility() {
+    const passwordInput = document.getElementById("password");
+    const passwordType = passwordInput.getAttribute("type");
+
+    if (passwordType === "password") {
+        passwordInput.setAttribute("type", "text");
+    } else {
+        passwordInput.setAttribute("type", "password");
+    }
+}
+
 
 
 

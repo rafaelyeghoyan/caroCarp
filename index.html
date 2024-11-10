@@ -24,7 +24,7 @@
     <link rel="preload" href="./assets/fonts/Gilroy-ThinItalic.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/fonts/Gilroy-Thin.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="./assets/fonts/Gilroy-UltraLightItalic.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="Ermilov-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/Ermilov-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <title>Caro Carp</title>
 </head>
 <body>
@@ -164,6 +164,44 @@
         </div>
         <div class="payment">
             <button>До оплати</button>
+        </div>
+
+    </div>
+</div>
+
+<div class="log_in">
+    <div class="log_in_block">
+        <div class="log_in_container">
+            <h5>Вхід в кабінет</h5>
+            <form action="#">
+                <input type="text">
+                <input type="number">
+                <div class="password-container">
+                    <input type="password" id="password" placeholder="Пароль">
+                    <span class="toggle-password" onclick="togglePasswordVisibility()">
+                        <img src="./assets/images/Eye.png" alt="No image">
+                    </span>
+                </div>
+            <div class="forgot_password">
+                <span>
+                    Забули пароль?
+                    <a href="#"> Скиньте його тут</a>
+                </span>
+            </div>
+                <button type="submit">
+                    Увійти
+                </button>
+            </form>
+            <p class="registration_message_paragraph">
+                Ще не маєте акаунту?
+                <a href="#"> Здійсніть покупку</a>
+                у нашому магазині
+                <span>від 1000 грн</span>,
+                і вам буде доступний особистий кабінет з приємними бонусами!
+            </p>
+        </div>
+        <div class="close" id="1">
+            <img src="./assets/images/Close%202.png" alt="No image">
         </div>
 
     </div>
